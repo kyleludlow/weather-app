@@ -1,0 +1,16 @@
+<ion-view title="Search Weather By City">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list">
+            <div class="spacer" style="height: 100px;"></div>
+            <label class="item item-input">
+                <input type="text" placeholder="enter a city" ng-model="city">
+            </label>
+        </form>
+        <button id="searchWeatherByCity-button4" class="button button-positive  button-block" ng-click="searchWeather(city)">Find Weather</button>
+        <ion-list>
+            <ion-item>Weather : {{weather}} <img ng-src="{{weatherIcon}}"/></ion-item>
+            <ion-item>Wind Speed: {{windSpeed}}</ion-item>
+            <ion-item>Item 3</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

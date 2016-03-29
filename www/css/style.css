@@ -1,0 +1,13 @@
+* {
+  /*   border: solid 1px white; */
+}
+body {
+  background-color: purple;
+  color: white;
+}
+#temperature {
+  font-size: 5em;
+}
+#submit-button {
+  float: right;
+}
