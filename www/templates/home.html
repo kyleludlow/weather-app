@@ -1,29 +1,30 @@
 <ion-view title="Home">
-  <ion-content overflow-scroll="true" padding="true" class="has-header">
+  <ion-content id="home-view-body" overflow-scroll="true" padding="true" class="has-header">
     <div class="container">
       <div class="row">
-        <div class="col s10">
+        <div class="city-input">
           <input class="text-lighten-1" id="user-input" type="text" ng-model="city"
                  placeholder="Madrid" required>
         </div>
-        <div class="col s2">
-          <button class="btn" id="submit-button" type="submit"
+        <div class="search-button-div">
+          <button class="btn grey darken-4 search-button" type="submit" ng-disabled="city === ''"
                   value="Search" ng-click="searchWeather(city)">Search
           </button>
         </div>
       </div>
-      <h2 class="text-center">Tuesday</h2>
+      <h2 class="text-center weather-icon">Tuesday</h2>
       <img class="center-block" height="150" width="150" src="img/icons/sunny-day.svg" alt=""/>
       <hr/>
-      <div class="row">
-        <div class="col m6">
-          <h2 id="temperature">40&deg;</h2>
-        </div>
-        <div class="col m6">
-          <h3><img class="center-block" height="25" width="25" src="img/icons/water-drop.svg" alt=""/>35%</h3>
-          <h4><img class="center-block" height="25" width="25" src="img/icons/wind-speed-flag.svg" alt=""/>
-            5.25 km/h</h4>
-        </div>
+      <div class="text-center weather-info">
+        <h2 id="temperature">40&deg;</h2>
+      </div>
+      <div class="text-center weather-info">
+        <h3><img src="img/icons/water-drop.svg" alt=""/>35%</h3>
+
+      </div>
+      <div class="text-center weather-info">
+        <h4><img src="img/icons/wind-speed-flag.svg" alt=""/>
+          5.25 km/h</h4>
       </div>
     </div>
   </ion-content>

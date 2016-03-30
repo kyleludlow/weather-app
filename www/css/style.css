@@ -1,13 +1,38 @@
-* {
-  /*   border: solid 1px white; */
-}
-body {
-  background-color: purple;
-  color: white;
+#home-view-body {
+  background-image: url(../img/backgrounds/sunny.jpg);
+  background-size: cover;
 }
 #temperature {
   font-size: 5em;
 }
-#submit-button {
-  float: right;
+
+.city-input {
+  width: 70%;
 }
+
+.city-input input {
+  width: 90%;
+}
+
+.search-button-div {
+  width: 19%;
+}
+.search-button {
+  opacity: 0.5;
+}
+.weather-info img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  color: white;
+}
+
+.weather-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+
+/*use .split[0]*/
