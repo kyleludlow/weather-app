@@ -4,7 +4,7 @@
       <div class="row">
         <div class="city-input">
           <input class="text-lighten-1" id="user-input" type="text" ng-model="city"
-                 placeholder="Madrid" required>
+                 placeholder="enter city here" required>
         </div>
         <div class="search-button-div">
           <button class="btn grey darken-4 search-button" type="submit" ng-disabled="city === ''"
@@ -12,19 +12,19 @@
           </button>
         </div>
       </div>
-      <h2 class="text-center weather-icon">Tuesday</h2>
-      <img class="center-block" height="150" width="150" src="img/icons/sunny-day.svg" alt=""/>
+      <h2 class="text-center weather-icon">{{cityName}}</h2>
+      <img class="center-block svg" height="150" width="150" ng-src="img/icons/{{iconColor}}/{{weatherIcon}}" alt=""/>
       <hr/>
       <div class="text-center weather-info">
-        <h2 id="temperature">40&deg;</h2>
+        <h3 id="temperature">{{temperature | number: 0}}&deg;</h3>
       </div>
       <div class="text-center weather-info">
-        <h3><img src="img/icons/water-drop.svg" alt=""/>35%</h3>
+        <h3><img class="svg" ng-src="img/icons/{{iconColor}}/water-drop.svg" alt=""/>{{humidity | number: 0}}%</h3>
 
       </div>
       <div class="text-center weather-info">
-        <h4><img src="img/icons/wind-speed-flag.svg" alt=""/>
-          5.25 km/h</h4>
+        <h3><img class="svg" ng-src="img/icons/{{iconColor}}/wind-speed-flag.svg" alt=""/>
+          {{windSpeed}} km/h</h3>
       </div>
     </div>
   </ion-content>

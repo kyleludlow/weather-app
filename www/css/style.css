@@ -1,11 +1,14 @@
 #home-view-body {
-  background-image: url(../img/backgrounds/sunny.jpg);
   background-size: cover;
+  color: white;
 }
 #temperature {
   font-size: 5em;
 }
 
+/*h2, h3 {*/
+  /*color: white;*/
+/*}*/
 .city-input {
   width: 70%;
 }
@@ -13,6 +16,10 @@
 .city-input input {
   width: 90%;
 }
+
+/*.svg {*/
+  /*fill: white;*/
+/*}*/
 
 .search-button-div {
   width: 19%;
